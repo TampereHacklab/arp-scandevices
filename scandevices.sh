@@ -31,7 +31,7 @@ while [ 0 ]; do
 			devices[$mac]=$(date +%s)		# update device's last seen
 			ipslist[$mac]=$ip
 		else
-			if [ -n "${devices[$i]}" ]; then
+			if [ -n "${devices[$mac]}" ]; then
 				unset devices[$mac]
 				unset ipslist[$mac]
 			fi
